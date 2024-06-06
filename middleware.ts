@@ -58,7 +58,7 @@ export default async function middleware(req: NextRequest) {
     );
   }
 
-  // rewrite root application to `/home` folder
+  rewrite root application to `/home` folder
   if (
     hostname === "localhost:3000" ||
     hostname === process.env.NEXT_PUBLIC_ROOT_DOMAIN
@@ -70,4 +70,13 @@ export default async function middleware(req: NextRequest) {
 
   // rewrite everything else to `/[domain]/[slug] dynamic route
   return NextResponse.rewrite(new URL(`/${hostname}${path}`, req.url));
+}
+
+import { NextResponse, NextRequest } from "next/server";
+import { get } from "@vercel/edge-config";
+
+export async function middleware(request: NextRequest) {
+  if (await get("showNewDashboard")) {
+    return NextResponse.rewrite(new URL("/new-dashboard", request.url));
+  }
 }
