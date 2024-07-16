@@ -1,4 +1,3 @@
-import { NextRequest, NextResponse } from "next/server";
 import { getToken } from "next-auth/jwt";
 
 export const config = {
@@ -14,7 +13,7 @@ export const config = {
   ],
 };
 
-export default async function middleware(req: NextRequest) {
+export default async function (req: NextRequest) {
   const url = req.nextUrl;
 
   // Get hostname of request (e.g. demo.vercel.pub, demo.localhost:3000)
@@ -52,7 +51,7 @@ export default async function middleware(req: NextRequest) {
   }
 
   // special case for `vercel.pub` domain
-  if (hostname === "localhost:3000") {
+  if (hostname === "vercel.pub") {
     return NextResponse.redirect(
       "https://vercel.com/blog/platforms-starter-kit",
     );
@@ -73,10 +72,10 @@ export default async function middleware(req: NextRequest) {
 }
 
 import { NextResponse, NextRequest } from "next/server";
-import { get } from "@vercel/edge-config";
+import { edgeServerAppPaths } from "next/dist/build/webpack/plugins/pages-manifest-plugin";
 
 export async function middleware(request: NextRequest) {
-  if (await get("showNewDashboard")) {
+  if (await ("showNewDashboard")) {
     return NextResponse.rewrite(new URL("/new-dashboard", request.url));
   }
 }
