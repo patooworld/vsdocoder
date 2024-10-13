@@ -105,11 +105,11 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       use-debounce:
-        specifier: ^10.0.0
-        version: 10.0.0(react@18.2.0)
+        specifier: ^10.0.4
+        version: 10.0.4(react@18.2.0)
     devDependencies:
       '@tailwindcss/forms':
-        specifier: ^0.5.9
+        specifier: ^0.5.7
         version: 0.5.9(tailwindcss@3.3.5)
       '@tailwindcss/typography':
         specifier: ^0.5.10
@@ -3433,11 +3433,11 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
 
-  use-debounce@10.0.0:
-    resolution: {integrity: sha512-XRjvlvCB46bah9IBXVnq/ACP2lxqXyZj0D9hj4K5OzNroMDpTEBg8Anuh1/UfRTRs7pLhQ+RiNxxwZu9+MVl1A==}
+  use-debounce@10.0.4:
+    resolution: {integrity: sha512-6Cf7Yr7Wk7Kdv77nnJMf6de4HuDE4dTxKij+RqE9rufDsI6zsbjyAxcH5y2ueJCQAnfgKbzXbZHYlkFwmBlWkw==}
     engines: {node: '>= 16.0.0'}
     peerDependencies:
-      react: '>=16.8.0'
+      react: '*'
 
   use-isomorphic-layout-effect@1.1.2:
     resolution: {integrity: sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==}
@@ -7451,7 +7451,7 @@ snapshots:
     dependencies:
       react: 18.2.0
 
-  use-debounce@10.0.0(react@18.2.0):
+  use-debounce@10.0.4(react@18.2.0):
     dependencies:
       react: 18.2.0
 
