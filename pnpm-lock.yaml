@@ -109,11 +109,11 @@ importers:
         version: 10.0.0(react@18.2.0)
     devDependencies:
       '@tailwindcss/forms':
-        specifier: ^0.5.9
+        specifier: ^0.5.7
         version: 0.5.9(tailwindcss@3.3.5)
       '@tailwindcss/typography':
-        specifier: ^0.5.10
-        version: 0.5.10(tailwindcss@3.3.5)
+        specifier: ^0.5.15
+        version: 0.5.15(tailwindcss@3.3.5)
       '@types/js-cookie':
         specifier: ^3.0.6
         version: 3.0.6
@@ -565,10 +565,10 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || >= 4.0.0-alpha.20'
 
-  '@tailwindcss/typography@0.5.10':
-    resolution: {integrity: sha512-Pe8BuPJQJd3FfRnm6H0ulKIGoMEQS+Vq01R6M5aCrFB/ccR/shT+0kXLjouGC1gFLm9hopTFN+DMP0pfwRWzPw==}
+  '@tailwindcss/typography@0.5.15':
+    resolution: {integrity: sha512-AqhlCXl+8grUz8uqExv5OTtgpjuVIwFTSXTrh8y9/pw6q2ek7fJ+Y8ZEVw7EB2DCcuCOtEjf9w3+J3rzts01uA==}
     peerDependencies:
-      tailwindcss: '>=3.0.0 || insiders'
+      tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20'
 
   '@tiptap/core@2.1.12':
     resolution: {integrity: sha512-ZGc3xrBJA9KY8kln5AYTj8y+GDrKxi7u95xIl2eccrqTY5CQeRu6HRNM1yT4mAjuSaG9jmazyjGRlQuhyxCKxQ==}
@@ -4011,7 +4011,7 @@ snapshots:
       mini-svg-data-uri: 1.4.4
       tailwindcss: 3.3.5
 
-  '@tailwindcss/typography@0.5.10(tailwindcss@3.3.5)':
+  '@tailwindcss/typography@0.5.15(tailwindcss@3.3.5)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
