@@ -81,8 +81,8 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       react-textarea-autosize:
-        specifier: ^8.5.3
-        version: 8.5.3(@types/react@18.3.11)(react@18.2.0)
+        specifier: ^8.5.4
+        version: 8.5.4(@types/react@18.3.11)(react@18.2.0)
       react-tweet:
         specifier: ^3.1.1
         version: 3.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -105,7 +105,7 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       use-debounce:
-        specifier: ^10.0.4
+        specifier: ^10.0.0
         version: 10.0.4(react@18.2.0)
     devDependencies:
       '@tailwindcss/forms':
@@ -121,10 +121,10 @@ importers:
         specifier: ^20.9.0
         version: 20.9.0
       '@types/react':
-        specifier: ^18.3.11
+        specifier: ^18.2.37
         version: 18.3.11
       '@types/react-dom':
-        specifier: ^18.3.1
+        specifier: ^18.2.15
         version: 18.3.1
       autoprefixer:
         specifier: ^10.4.16
@@ -186,6 +186,10 @@ packages:
 
   '@babel/runtime@7.23.2':
     resolution: {integrity: sha512-mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.25.7':
+    resolution: {integrity: sha512-FjoyLe754PMiYsFaN5C94ttGiOmBNYTf6pLr4xXHAT5uctHb092PBszndLDR5XA/jghQvn4n7JMHl7dmTgbm9w==}
     engines: {node: '>=6.9.0'}
 
   '@babel/types@7.25.8':
@@ -2882,8 +2886,8 @@ packages:
       '@types/react':
         optional: true
 
-  react-textarea-autosize@8.5.3:
-    resolution: {integrity: sha512-XT1024o2pqCuZSuBt9FwHlaDeNtVrtCXu0Rnz88t1jUGheCLa3PhjE1GH8Ctm2axEtvdCl5SUHYschyQ0L5QHQ==}
+  react-textarea-autosize@8.5.4:
+    resolution: {integrity: sha512-eSSjVtRLcLfFwFcariT77t9hcbVJHQV76b51QjQGarQIHml2+gM2lms0n3XrhnDmgK5B+/Z7TmQk5OHNzqYm/A==}
     engines: {node: '>=10'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -2944,6 +2948,9 @@ packages:
 
   regenerator-runtime@0.14.0:
     resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
+
+  regenerator-runtime@0.14.1:
+    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
 
   regexp.prototype.flags@1.5.1:
     resolution: {integrity: sha512-sy6TXMN+hnP/wMy+ISxg3krXx7BAtWVO4UouuCN/ziM9UEne0euamVNafDfvC83bRNr95y0V5iijeDQFUNpvrg==}
@@ -3591,6 +3598,10 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.0
 
+  '@babel/runtime@7.25.7':
+    dependencies:
+      regenerator-runtime: 0.14.1
+
   '@babel/types@7.25.8':
     dependencies:
       '@babel/helper-string-parser': 7.25.7
@@ -3825,28 +3836,28 @@ snapshots:
 
   '@radix-ui/primitive@1.0.0':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
 
   '@radix-ui/react-compose-refs@1.0.0(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       react: 18.2.0
 
   '@radix-ui/react-compose-refs@1.0.1(@types/react@18.3.11)(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       react: 18.2.0
     optionalDependencies:
       '@types/react': 18.3.11
 
   '@radix-ui/react-context@1.0.0(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       react: 18.2.0
 
   '@radix-ui/react-dialog@1.0.0(@types/react@18.3.11)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       '@radix-ui/primitive': 1.0.0
       '@radix-ui/react-compose-refs': 1.0.0(react@18.2.0)
       '@radix-ui/react-context': 1.0.0(react@18.2.0)
@@ -3868,7 +3879,7 @@ snapshots:
 
   '@radix-ui/react-dismissable-layer@1.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       '@radix-ui/primitive': 1.0.0
       '@radix-ui/react-compose-refs': 1.0.0(react@18.2.0)
       '@radix-ui/react-primitive': 1.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -3879,12 +3890,12 @@ snapshots:
 
   '@radix-ui/react-focus-guards@1.0.0(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       react: 18.2.0
 
   '@radix-ui/react-focus-scope@1.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       '@radix-ui/react-compose-refs': 1.0.0(react@18.2.0)
       '@radix-ui/react-primitive': 1.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@radix-ui/react-use-callback-ref': 1.0.0(react@18.2.0)
@@ -3893,20 +3904,20 @@ snapshots:
 
   '@radix-ui/react-id@1.0.0(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       '@radix-ui/react-use-layout-effect': 1.0.0(react@18.2.0)
       react: 18.2.0
 
   '@radix-ui/react-portal@1.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       '@radix-ui/react-primitive': 1.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
   '@radix-ui/react-presence@1.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       '@radix-ui/react-compose-refs': 1.0.0(react@18.2.0)
       '@radix-ui/react-use-layout-effect': 1.0.0(react@18.2.0)
       react: 18.2.0
@@ -3914,20 +3925,20 @@ snapshots:
 
   '@radix-ui/react-primitive@1.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       '@radix-ui/react-slot': 1.0.0(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
   '@radix-ui/react-slot@1.0.0(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       '@radix-ui/react-compose-refs': 1.0.0(react@18.2.0)
       react: 18.2.0
 
   '@radix-ui/react-slot@1.0.2(@types/react@18.3.11)(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.11)(react@18.2.0)
       react: 18.2.0
     optionalDependencies:
@@ -3935,24 +3946,24 @@ snapshots:
 
   '@radix-ui/react-use-callback-ref@1.0.0(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       react: 18.2.0
 
   '@radix-ui/react-use-controllable-state@1.0.0(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       '@radix-ui/react-use-callback-ref': 1.0.0(react@18.2.0)
       react: 18.2.0
 
   '@radix-ui/react-use-escape-keydown@1.0.0(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       '@radix-ui/react-use-callback-ref': 1.0.0(react@18.2.0)
       react: 18.2.0
 
   '@radix-ui/react-use-layout-effect@1.0.0(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       react: 18.2.0
 
   '@remirror/core-constants@2.0.2': {}
@@ -4909,11 +4920,11 @@ snapshots:
 
   dom-helpers@3.4.0:
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
 
   dom-helpers@5.2.1:
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       csstype: 3.1.3
 
   electron-to-chromium@1.4.582: {}
@@ -5095,7 +5106,7 @@ snapshots:
 
   eslint-plugin-jsx-a11y@6.8.0(eslint@8.53.0):
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       aria-query: 5.3.0
       array-includes: 3.1.7
       array.prototype.flatmap: 1.3.2
@@ -6751,9 +6762,9 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.11
 
-  react-textarea-autosize@8.5.3(@types/react@18.3.11)(react@18.2.0):
+  react-textarea-autosize@8.5.4(@types/react@18.3.11)(react@18.2.0):
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       react: 18.2.0
       use-composed-ref: 1.3.0(react@18.2.0)
       use-latest: 1.2.1(@types/react@18.3.11)(react@18.2.0)
@@ -6771,7 +6782,7 @@ snapshots:
 
   react-transition-group@4.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.25.7
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
@@ -6842,6 +6853,8 @@ snapshots:
       which-builtin-type: 1.1.3
 
   regenerator-runtime@0.14.0: {}
+
+  regenerator-runtime@0.14.1: {}
 
   regexp.prototype.flags@1.5.1:
     dependencies:
